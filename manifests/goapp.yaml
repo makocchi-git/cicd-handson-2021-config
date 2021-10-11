@@ -14,9 +14,9 @@ spec:
         app: goapp
     spec:
       containers:
-      - name: goapp
-        image: docker.pkg.github.com/makocchi-git/cicd-handson-2021-code/go-image:7 # {"$imagepolicy": "flux-system:go-image"}
-        ports:
-        - containerPort: 9090
+        - name: goapp
+          image: docker.pkg.github.com/makocchi-git/cicd-handson-2021-code/go-image:8 # {"$imagepolicy": "flux-system:go-image"}
+          ports:
+            - containerPort: 9090
       imagePullSecrets:
-      - name: dockerconfigjson-github-com
+        - name: dockerconfigjson-github-com
